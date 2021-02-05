@@ -5,5 +5,5 @@ COPY . .
 RUN apk add --update python make g++\
    && rm -rf /var/cache/apk/*
 RUN npm install
-EXPOSE 3000
+EXPOSE 5002
 CMD [ "node", "server.js" ]
